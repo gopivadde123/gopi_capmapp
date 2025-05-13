@@ -90,5 +90,8 @@ service CatalogService @(
   function getMostExpensiveOrder() returns POs;
   // function for UI
    function getOrderDefault() returns POs;
+   // demo
+  //  entity demo as projection on cds.
+  function getDummy() returns String;
 
 }
