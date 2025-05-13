@@ -1,0 +1,86 @@
+{
+  "xsappname": "mycapm",
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.Display",
+      "description": "display"
+    },
+    {
+      "name": "$XSAPPNAME.Edit",
+      "description": "edit"
+    },
+    {
+      "name": "$XSAPPNAME.Boost",
+      "description": "boost"
+    },
+    {
+      "name": "$XSAPPNAME.Viewer",
+      "description": "Viewer"
+    },
+    {
+      "name": "$XSAPPNAME.Editor",
+      "description": "Editor"
+    }
+  ],
+  "role-collections": [
+    {
+      "name": "man",
+      "description": "User Viewer Role Collection",
+      "role-template-references": [
+        "$XSAPPNAME.Viewer"
+      ]
+    }
+  ],
+  "attributes": [
+    {
+      "name": "Country",
+      "description": "Country",
+      "valueType": "string"
+    },
+    {
+      "name": "BankName",
+      "description": "Bank Name of employee",
+      "valueType": "string"
+    }
+  ],
+  "role-templates": [
+    {
+      "name": "Viewer",
+      "description": "Access Read-only data",
+      "default-role-name": "Viewer: Authorized to Read All data",
+      "scope-references": [
+        "$XSAPPNAME.Display"
+      ],
+      "attribute-references": [
+        {
+          "name": "Country",
+          "default-values": [
+            "GB"
+          ]
+        },
+        {
+          "name": "BankName",
+          "default-values": []
+        }
+      ]
+    },
+    {
+      "name": "Editor",
+      "description": "Edit and boost the purchase order",
+      "scope-references": [
+        "$XSAPPNAME.Edit",
+        "$XSAPPNAME.Boost"
+      ]
+    }
+  ],
+  "authorities": [
+    "$ACCEPT_GRANTED_AUTHORITIES"
+  ],
+  "oauth2-configuration": {
+    "token-validity": 900,
+    "redirect-uris": [
+      "https://*.cfapps.us10-001.hana.ondemand.com/login/callback"
+    ]
+  },
+  "xsenableasyncservice": "true"
+}

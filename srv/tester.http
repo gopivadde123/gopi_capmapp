@@ -1,0 +1,149 @@
+# ### indicates new call, shows the Send Request button
+###Get the service document
+http://localhost:4004/odata/v4/CatalogService
+# Authorization: Basic anudhav:
+# Authorization: Bearer eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vNWVjMWJkOTB0cmlhbC5hdXRoZW50aWNhdGlvbi51czEwLmhhbmEub25kZW1hbmQuY29tL3Rva2VuX2tleXMiLCJraWQiOiJkZWZhdWx0LWp3dC1rZXktMGNmMWMxN2QyMyIsInR5cCI6IkpXVCIsImppZCI6ICJydGhSRVBjT2ZiNktRNzFYa1haQmpSOE1ySUoyUnpQWDR5MHJTcEVzNFFnPSJ9.eyJqdGkiOiIwYTBmMDVkMmQ1NTA0MDY2OWE3OGJmZTM5ZDA5YjVjOCIsImV4dF9hdHRyIjp7ImVuaGFuY2VyIjoiWFNVQUEiLCJzdWJhY2NvdW50aWQiOiIzZjVmNDExNy0xYzNmLTRlNzMtOTY3YS0wMzYxZmQ3MzUxOTUiLCJ6ZG4iOiI1ZWMxYmQ5MHRyaWFsIn0sInVzZXJfdXVpZCI6IjNlMTAwODJiLTUwMDgtNDExMS1hOTUxLTA1YzJmNjIyOWM4NCIsInhzLnVzZXIuYXR0cmlidXRlcyI6e30sInhzLnN5c3RlbS5hdHRyaWJ1dGVzIjp7InhzLnJvbGVjb2xsZWN0aW9ucyI6WyJTQVAgSEFOQSBDbG91ZCBWaWV3ZXIiLCJTQVAgSEFOQSBDbG91ZCBBZG1pbmlzdHJhdG9yIiwiU3ViYWNjb3VudCBBZG1pbmlzdHJhdG9yIiwiU0FQIEhBTkEgQ2xvdWQgU2VjdXJpdHkgQWRtaW5pc3RyYXRvciJdfSwiZ2l2ZW5fbmFtZSI6ImdvcGkiLCJmYW1pbHlfbmFtZSI6InZhZGRlIiwic3ViIjoiOWZhZGIyOWUtYmZhZS00ZmIwLWIzMGQtZmZlMGQzMTY5MWI1Iiwic2NvcGUiOlsib3BlbmlkIl0sImNsaWVudF9pZCI6InNiLW15Y2FwbS01ZWMxYmQ5MHRyaWFsLWRldiF0NDQxMDI1IiwiY2lkIjoic2ItbXljYXBtLTVlYzFiZDkwdHJpYWwtZGV2IXQ0NDEwMjUiLCJhenAiOiJzYi1teWNhcG0tNWVjMWJkOTB0cmlhbC1kZXYhdDQ0MTAyNSIsImdyYW50X3R5cGUiOiJwYXNzd29yZCIsInVzZXJfaWQiOiI5ZmFkYjI5ZS1iZmFlLTRmYjAtYjMwZC1mZmUwZDMxNjkxYjUiLCJvcmlnaW4iOiJzYXAuZGVmYXVsdCIsInVzZXJfbmFtZSI6InZnb3BpLmZ1bGxzdGFja2RldmphdmFzY3JpcHRAZ21haWwuY29tIiwiZW1haWwiOiJ2Z29waS5mdWxsc3RhY2tkZXZqYXZhc2NyaXB0QGdtYWlsLmNvbSIsImF1dGhfdGltZSI6MTc0Njg3NjAyNSwicmV2X3NpZyI6IjNlN2UyNzZhIiwiaWF0IjoxNzQ2ODc2MDI1LCJleHAiOjE3NDY4NzY5MjUsImlzcyI6Imh0dHBzOi8vNWVjMWJkOTB0cmlhbC5hdXRoZW50aWNhdGlvbi51czEwLmhhbmEub25kZW1hbmQuY29tL29hdXRoL3Rva2VuIiwiemlkIjoiM2Y1ZjQxMTctMWMzZi00ZTczLTk2N2EtMDM2MWZkNzM1MTk1IiwiYXVkIjpbIm9wZW5pZCIsInNiLW15Y2FwbS01ZWMxYmQ5MHRyaWFsLWRldiF0NDQxMDI1Il19.Cph7wMY76WnsDVp_voxfnDerhqG-_Fu4pxH6Sjvh5UMOxdiDDVCrJGP2SPpLBiyH0anLBDoZh7q_d4yf6WlWr2fJ9UTnBXhvpI2jo_rDf9-3-kZyLeVrG6tf-NRCqiQH9oX7_cm6Ok-j3fAIEdOnLMwSq-oWay3CV3A4uxGrD0Krj58Bd7APtIYdwnylzLcH2w6pHa-w6kFxb3AxwfUWadkqL-HVrbo07KNywor7yTOc6dS-zlfcSVIOOjyAW0jy8ImeZAa4d_vqiA7h4D9mU0f89fXTYE0hNqPnLrJC1hM3KD6cO-uzkTSLas3kI8DDb2ZiAo4tgMGW9aDFTrwg8A
+
+###GET call to show metadata of service
+http://localhost:4004/odata/v4/CatalogService/$metadata
+Authorization: Basic gopi:
+###GET call to show all employees
+http://localhost:4004/odata/v4/CatalogService/EmployeeSet
+# Authorization: Basic gopi:
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vNWVjMWJkOTB0cmlhbC5hdXRoZW50aWNhdGlvbi51czEwLmhhbmEub25kZW1hbmQuY29tL3Rva2VuX2tleXMiLCJraWQiOiJkZWZhdWx0LWp3dC1rZXktMGNmMWMxN2QyMyIsInR5cCI6IkpXVCIsImppZCI6ICJydGhSRVBjT2ZiNktRNzFYa1haQmpSOE1ySUoyUnpQWDR5MHJTcEVzNFFnPSJ9.eyJqdGkiOiIwYTBmMDVkMmQ1NTA0MDY2OWE3OGJmZTM5ZDA5YjVjOCIsImV4dF9hdHRyIjp7ImVuaGFuY2VyIjoiWFNVQUEiLCJzdWJhY2NvdW50aWQiOiIzZjVmNDExNy0xYzNmLTRlNzMtOTY3YS0wMzYxZmQ3MzUxOTUiLCJ6ZG4iOiI1ZWMxYmQ5MHRyaWFsIn0sInVzZXJfdXVpZCI6IjNlMTAwODJiLTUwMDgtNDExMS1hOTUxLTA1YzJmNjIyOWM4NCIsInhzLnVzZXIuYXR0cmlidXRlcyI6e30sInhzLnN5c3RlbS5hdHRyaWJ1dGVzIjp7InhzLnJvbGVjb2xsZWN0aW9ucyI6WyJTQVAgSEFOQSBDbG91ZCBWaWV3ZXIiLCJTQVAgSEFOQSBDbG91ZCBBZG1pbmlzdHJhdG9yIiwiU3ViYWNjb3VudCBBZG1pbmlzdHJhdG9yIiwiU0FQIEhBTkEgQ2xvdWQgU2VjdXJpdHkgQWRtaW5pc3RyYXRvciJdfSwiZ2l2ZW5fbmFtZSI6ImdvcGkiLCJmYW1pbHlfbmFtZSI6InZhZGRlIiwic3ViIjoiOWZhZGIyOWUtYmZhZS00ZmIwLWIzMGQtZmZlMGQzMTY5MWI1Iiwic2NvcGUiOlsib3BlbmlkIl0sImNsaWVudF9pZCI6InNiLW15Y2FwbS01ZWMxYmQ5MHRyaWFsLWRldiF0NDQxMDI1IiwiY2lkIjoic2ItbXljYXBtLTVlYzFiZDkwdHJpYWwtZGV2IXQ0NDEwMjUiLCJhenAiOiJzYi1teWNhcG0tNWVjMWJkOTB0cmlhbC1kZXYhdDQ0MTAyNSIsImdyYW50X3R5cGUiOiJwYXNzd29yZCIsInVzZXJfaWQiOiI5ZmFkYjI5ZS1iZmFlLTRmYjAtYjMwZC1mZmUwZDMxNjkxYjUiLCJvcmlnaW4iOiJzYXAuZGVmYXVsdCIsInVzZXJfbmFtZSI6InZnb3BpLmZ1bGxzdGFja2RldmphdmFzY3JpcHRAZ21haWwuY29tIiwiZW1haWwiOiJ2Z29waS5mdWxsc3RhY2tkZXZqYXZhc2NyaXB0QGdtYWlsLmNvbSIsImF1dGhfdGltZSI6MTc0Njg3NjAyNSwicmV2X3NpZyI6IjNlN2UyNzZhIiwiaWF0IjoxNzQ2ODc2MDI1LCJleHAiOjE3NDY4NzY5MjUsImlzcyI6Imh0dHBzOi8vNWVjMWJkOTB0cmlhbC5hdXRoZW50aWNhdGlvbi51czEwLmhhbmEub25kZW1hbmQuY29tL29hdXRoL3Rva2VuIiwiemlkIjoiM2Y1ZjQxMTctMWMzZi00ZTczLTk2N2EtMDM2MWZkNzM1MTk1IiwiYXVkIjpbIm9wZW5pZCIsInNiLW15Y2FwbS01ZWMxYmQ5MHRyaWFsLWRldiF0NDQxMDI1Il19.Cph7wMY76WnsDVp_voxfnDerhqG-_Fu4pxH6Sjvh5UMOxdiDDVCrJGP2SPpLBiyH0anLBDoZh7q_d4yf6WlWr2fJ9UTnBXhvpI2jo_rDf9-3-kZyLeVrG6tf-NRCqiQH9oX7_cm6Ok-j3fAIEdOnLMwSq-oWay3CV3A4uxGrD0Krj58Bd7APtIYdwnylzLcH2w6pHa-w6kFxb3AxwfUWadkqL-HVrbo07KNywor7yTOc6dS-zlfcSVIOOjyAW0jy8ImeZAa4d_vqiA7h4D9mU0f89fXTYE0hNqPnLrJC1hM3KD6cO-uzkTSLas3kI8DDb2ZiAo4tgMGW9aDFTrwg8A
+
+# Authorization: Bearer eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vNWVjMWJkOTB0cmlhbC5hdXRoZW50aWNhdGlvbi51czEwLmhhbmEub25kZW1hbmQuY29tL3Rva2VuX2tleXMiLCJraWQiOiJkZWZhdWx0LWp3dC1rZXktMGNmMWMxN2QyMyIsInR5cCI6IkpXVCIsImppZCI6ICJxdzFmM2pmMDNWMHpWK0ljRXhiUUdWWk9manVLditmejliMGo1OWFFNERFPSJ9.eyJqdGkiOiJjYzI2NzNkMGQ3MTQ0YzRjYTRjZjcwMmJkMmNhMjExMyIsImV4dF9hdHRyIjp7ImVuaGFuY2VyIjoiWFNVQUEiLCJzdWJhY2NvdW50aWQiOiIzZjVmNDExNy0xYzNmLTRlNzMtOTY3YS0wMzYxZmQ3MzUxOTUiLCJ6ZG4iOiI1ZWMxYmQ5MHRyaWFsIn0sInVzZXJfdXVpZCI6IjNlMTAwODJiLTUwMDgtNDExMS1hOTUxLTA1YzJmNjIyOWM4NCIsInhzLnVzZXIuYXR0cmlidXRlcyI6eyJCYW5rTmFtZSI6WyJNeSBCYW5rIG9mIFNhbiBGcmFuY2lzY28iXSwiQ291bnRyeSI6WyJHQiIsIklOIiwiVVMiXX0sInhzLnN5c3RlbS5hdHRyaWJ1dGVzIjp7InhzLnJvbGVjb2xsZWN0aW9ucyI6WyJSQ19BTlVCSEFWQ0FQIiwiU0FQIEhBTkEgQ2xvdWQgVmlld2VyIiwiU0FQIEhBTkEgQ2xvdWQgQWRtaW5pc3RyYXRvciIsIlN1YmFjY291bnQgQWRtaW5pc3RyYXRvciIsIlNBUCBIQU5BIENsb3VkIFNlY3VyaXR5IEFkbWluaXN0cmF0b3IiXX0sImdpdmVuX25hbWUiOiJnb3BpIiwiZmFtaWx5X25hbWUiOiJ2YWRkZSIsInN1YiI6IjlmYWRiMjllLWJmYWUtNGZiMC1iMzBkLWZmZTBkMzE2OTFiNSIsInNjb3BlIjpbIm15Y2FwbS01ZWMxYmQ5MHRyaWFsLWRldiF0NDQxMDI1LkRpc3BsYXkiLCJvcGVuaWQiXSwiY2xpZW50X2lkIjoic2ItbXljYXBtLTVlYzFiZDkwdHJpYWwtZGV2IXQ0NDEwMjUiLCJjaWQiOiJzYi1teWNhcG0tNWVjMWJkOTB0cmlhbC1kZXYhdDQ0MTAyNSIsImF6cCI6InNiLW15Y2FwbS01ZWMxYmQ5MHRyaWFsLWRldiF0NDQxMDI1IiwiZ3JhbnRfdHlwZSI6InBhc3N3b3JkIiwidXNlcl9pZCI6IjlmYWRiMjllLWJmYWUtNGZiMC1iMzBkLWZmZTBkMzE2OTFiNSIsIm9yaWdpbiI6InNhcC5kZWZhdWx0IiwidXNlcl9uYW1lIjoidmdvcGkuZnVsbHN0YWNrZGV2amF2YXNjcmlwdEBnbWFpbC5jb20iLCJlbWFpbCI6InZnb3BpLmZ1bGxzdGFja2RldmphdmFzY3JpcHRAZ21haWwuY29tIiwiYXV0aF90aW1lIjoxNzQ2ODc2OTE3LCJyZXZfc2lnIjoiM2U3ZTI3NmEiLCJpYXQiOjE3NDY4NzY5MTgsImV4cCI6MTc0Njg3NzgxOCwiaXNzIjoiaHR0cHM6Ly81ZWMxYmQ5MHRyaWFsLmF1dGhlbnRpY2F0aW9uLnVzMTAuaGFuYS5vbmRlbWFuZC5jb20vb2F1dGgvdG9rZW4iLCJ6aWQiOiIzZjVmNDExNy0xYzNmLTRlNzMtOTY3YS0wMzYxZmQ3MzUxOTUiLCJhdWQiOlsibXljYXBtLTVlYzFiZDkwdHJpYWwtZGV2IXQ0NDEwMjUiLCJvcGVuaWQiLCJzYi1teWNhcG0tNWVjMWJkOTB0cmlhbC1kZXYhdDQ0MTAyNSJdfQ.dC62Nik-BvuawE5yZbezrIbGPetOh-JVgJf-5S_IBI_WWVDGhIkiSdAAw5p_Gc7QwPhIxNnd6fkEyDpFoGI0yScqULPStG8WjEZW7_WJmNCD5Kd7l0lRTQUOn5C13dQUjnm0x0oq2L1JSfq6sOC7lUcULYk1WzSsGKoxPXnYolfbcOVh-EM8fIPSKc-LOWk7AVnCRBqcoUGnRQPEMaceVqtn_pnml8pJJKiYd9wz5NWwkkWtUmfuTlngz5yX3k1e1SDPBGv9bK4L7qAkj2yDynwdO35N-KecPpJX9ij0w_6GUlJxQDEiXHTZix2ZzQwApRHOS7xp6a24OgltIQ0HMA
+###GET the count of employees - $count('$'- this predicate)
+http://localhost:4004/odata/v4/CatalogService/EmployeeSet/$count
+Authorization: Basic anudhav:
+###GET call with pagination - $top, $skip
+http://localhost:4004/odata/v4/CatalogService/EmployeeSet?$top=2&$skip=2
+
+###Select few fields - $select
+http://localhost:4004/odata/v4/CatalogService/EmployeeSet?$select=nameFirst,nameLast,email
+
+###Get call with pagination - $filter
+http://localhost:4004/odata/v4/CatalogService/EmployeeSet?$filter=sex eq 'M'
+
+###GET call with pattern match -
+http://localhost:4004/odata/v4/CatalogService/EmployeeSet?$filter=Contains(nameFirst,'ch')
+
+###GET call to load Single Employee data
+# http://localhost:4004/odata/v4/CatalogService/EmployeeSet/02BD2137-0890-1EEA-A6C2-BB55C198A7FB
+http://localhost:4004/odata/v4/CatalogService/EmployeeSet('02BD2137-0890-1EEA-A6C2-BB55C198A7FB')
+
+###POST - to create new employee
+POST http://localhost:4004/odata/v4/CatalogService/EmployeeSet
+Content-Type: application/json
+
+    {
+      "nameFirst": "Gopi",
+      "nameMiddle": null,
+      "nameLast": "Vadde",
+      "nameInitials": null,
+      "sex": "F",
+      "language": "E",
+      "phoneNumber": "+1 224 374 524",
+      "email": "sallyspring@itelo.info",
+      "loginName": "SPRINGS",
+      "currency_code": "USD",
+      "salaryAmount": 12122,
+      "accountNumber": "23232",
+      "bankId": "",
+      "bankName": "My Bank of Antioch"
+    }
+
+###PATCH - to update data,if record not there create record and do update 2 req comes
+PATCH http://localhost:4004/odata/v4/CatalogService/EmployeeSet/aa398c79-1d1d-48da-95da-c3e5367f0092
+Content-Type: application/json
+
+{
+      "salaryAmount":10000000,
+      "currency_code":"USD"
+}
+
+###Read newly created employee
+http://localhost:4004/odata/v4/CatalogService/EmployeeSet/2e4507e0-234f-4b28-9dd4-52608b604608
+
+###Romove the employee
+DELETE http://localhost:4004/odata/v4/CatalogService/EmployeeSet/2e4507e0-234f-4b28-9dd4-52608b604608
+
+###GET the product data
+http://localhost:4004/odata/v4/CatalogService/ProductSet
+
+###GET Single product data
+http://localhost:4004/odata/v4/CatalogService/ProductSet/74867AD200E41EDBA5D8B06B26EBC052
+
+###GET Producct and its order data - mixin - lazy loading/
+http://localhost:4004/odata/v4/CatalogService/ProductSet/74867AD200E41EDBA5D8B06B26EBC052?$expand=To_Items
+
+
+###GET All purchase orders
+http://localhost:4004/odata/v4/CatalogService/POs
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vNWVjMWJkOTB0cmlhbC5hdXRoZW50aWNhdGlvbi51czEwLmhhbmEub25kZW1hbmQuY29tL3Rva2VuX2tleXMiLCJraWQiOiJkZWZhdWx0LWp3dC1rZXktMGNmMWMxN2QyMyIsInR5cCI6IkpXVCIsImppZCI6ICJydGhSRVBjT2ZiNktRNzFYa1haQmpSOE1ySUoyUnpQWDR5MHJTcEVzNFFnPSJ9.eyJqdGkiOiIwYTBmMDVkMmQ1NTA0MDY2OWE3OGJmZTM5ZDA5YjVjOCIsImV4dF9hdHRyIjp7ImVuaGFuY2VyIjoiWFNVQUEiLCJzdWJhY2NvdW50aWQiOiIzZjVmNDExNy0xYzNmLTRlNzMtOTY3YS0wMzYxZmQ3MzUxOTUiLCJ6ZG4iOiI1ZWMxYmQ5MHRyaWFsIn0sInVzZXJfdXVpZCI6IjNlMTAwODJiLTUwMDgtNDExMS1hOTUxLTA1YzJmNjIyOWM4NCIsInhzLnVzZXIuYXR0cmlidXRlcyI6e30sInhzLnN5c3RlbS5hdHRyaWJ1dGVzIjp7InhzLnJvbGVjb2xsZWN0aW9ucyI6WyJTQVAgSEFOQSBDbG91ZCBWaWV3ZXIiLCJTQVAgSEFOQSBDbG91ZCBBZG1pbmlzdHJhdG9yIiwiU3ViYWNjb3VudCBBZG1pbmlzdHJhdG9yIiwiU0FQIEhBTkEgQ2xvdWQgU2VjdXJpdHkgQWRtaW5pc3RyYXRvciJdfSwiZ2l2ZW5fbmFtZSI6ImdvcGkiLCJmYW1pbHlfbmFtZSI6InZhZGRlIiwic3ViIjoiOWZhZGIyOWUtYmZhZS00ZmIwLWIzMGQtZmZlMGQzMTY5MWI1Iiwic2NvcGUiOlsib3BlbmlkIl0sImNsaWVudF9pZCI6InNiLW15Y2FwbS01ZWMxYmQ5MHRyaWFsLWRldiF0NDQxMDI1IiwiY2lkIjoic2ItbXljYXBtLTVlYzFiZDkwdHJpYWwtZGV2IXQ0NDEwMjUiLCJhenAiOiJzYi1teWNhcG0tNWVjMWJkOTB0cmlhbC1kZXYhdDQ0MTAyNSIsImdyYW50X3R5cGUiOiJwYXNzd29yZCIsInVzZXJfaWQiOiI5ZmFkYjI5ZS1iZmFlLTRmYjAtYjMwZC1mZmUwZDMxNjkxYjUiLCJvcmlnaW4iOiJzYXAuZGVmYXVsdCIsInVzZXJfbmFtZSI6InZnb3BpLmZ1bGxzdGFja2RldmphdmFzY3JpcHRAZ21haWwuY29tIiwiZW1haWwiOiJ2Z29waS5mdWxsc3RhY2tkZXZqYXZhc2NyaXB0QGdtYWlsLmNvbSIsImF1dGhfdGltZSI6MTc0Njg3NjAyNSwicmV2X3NpZyI6IjNlN2UyNzZhIiwiaWF0IjoxNzQ2ODc2MDI1LCJleHAiOjE3NDY4NzY5MjUsImlzcyI6Imh0dHBzOi8vNWVjMWJkOTB0cmlhbC5hdXRoZW50aWNhdGlvbi51czEwLmhhbmEub25kZW1hbmQuY29tL29hdXRoL3Rva2VuIiwiemlkIjoiM2Y1ZjQxMTctMWMzZi00ZTczLTk2N2EtMDM2MWZkNzM1MTk1IiwiYXVkIjpbIm9wZW5pZCIsInNiLW15Y2FwbS01ZWMxYmQ5MHRyaWFsLWRldiF0NDQxMDI1Il19.Cph7wMY76WnsDVp_voxfnDerhqG-_Fu4pxH6Sjvh5UMOxdiDDVCrJGP2SPpLBiyH0anLBDoZh7q_d4yf6WlWr2fJ9UTnBXhvpI2jo_rDf9-3-kZyLeVrG6tf-NRCqiQH9oX7_cm6Ok-j3fAIEdOnLMwSq-oWay3CV3A4uxGrD0Krj58Bd7APtIYdwnylzLcH2w6pHa-w6kFxb3AxwfUWadkqL-HVrbo07KNywor7yTOc6dS-zlfcSVIOOjyAW0jy8ImeZAa4d_vqiA7h4D9mU0f89fXTYE0hNqPnLrJC1hM3KD6cO-uzkTSLas3kI8DDb2ZiAo4tgMGW9aDFTrwg8A
+
+
+
+###GET Single purchase orders
+http://localhost:4004/odata/v4/CatalogService/POs/1d79cebf4aaa4532959e5022300c558e
+
+###GET Single purchase orders composition header data and item data together
+http://localhost:4004/odata/v4/CatalogService/POs/74867AD200E41EDBA5D8B0C98DC28052?$expand=Items
+
+###Exercise - POST call to insert PO and items together
+
+POST http://localhost:4004/odata/v4/CatalogService/POs
+Content-Type: application/json
+
+{
+  "CURRENCY_code": "EUR",
+  "GROSS_AMOUNT": 3913.91,
+  "NET_AMOUNT": 3289,
+  "TAX_AMOUNT": 624.91,
+  "NODE_KEY": "74867AD200E41EDBA5D8B0C9TDC2Y952",
+  "PO_ID": "900000000",
+  "PARTNER_GUID_NODE_KEY": "74867AD200E41EDBA5D8B06885B04952",
+  "LIFECYCLE_STATUS": "N",
+  "OVERALL_STATUS": "A",
+  "Items": [
+    {
+      "CURRENCY_code": "ARS",
+      "GROSS_AMOUNT": 154.7,
+      "NET_AMOUNT": 130,
+      "TAX_AMOUNT": 24.7,
+      "NODE_KEY": "74867AD200E41EDBA5D8B0CBD3BA5052",
+      "PARENT_KEY_NODE_KEY": "74867AD200E41EDBA5D8B0C9TDC2Y952",
+      "PO_ITEM_POS": 10,
+      "PRODUCT_GUID_NODE_KEY": "74867AD200E41EDBA5D8B06B26F60052"
+    },
+    {
+      "CURRENCY_code": "ARS",
+      "GROSS_AMOUNT": 402.22,
+      "NET_AMOUNT": 338,
+      "TAX_AMOUNT": 64.22,
+      "NODE_KEY": "74867AD200E41EDBA5D8B0CBD3572652",
+      "PARENT_KEY_NODE_KEY": "74867AD200E41EDBA5D8B0C9TDC2Y952",
+      "PO_ITEM_POS": 20,
+      "PRODUCT_GUID_NODE_KEY": "74867AD200E41EDBA5D8B06B26F06052"
+    }
+  ]
+}
+
+###calling the function - non instance bound means no entityset
+###getMostExpensiveOrder() - function calling
+http://localhost:4004/odata/v4/CatalogService/getMostExpensiveOrder()
+
+###Trigger the action, Instance Bound action mandatory to pass instance
+###Here updating the database using Actions
+POST http://localhost:4004/odata/v4/CatalogService/POs/74867AD200E41EDBA5D8B0C98DC28052/CatalogService.boost
+Authorization: Basic anudhav:
+Content-Type: application/json
+
+{}
+
+###GET Custom entity data
+http://localhost:4004/odata/v4/my/EmployeeSrv
+
+###GET AddressSet table data
+http://localhost:4004/odata/v4/CatalogService/AddressSet
+Authorization: Basic gopi:
