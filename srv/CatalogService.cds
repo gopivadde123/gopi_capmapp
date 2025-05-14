@@ -91,6 +91,7 @@ service CatalogService @(
   // function for UI
    function getOrderDefault() returns POs;
    // demo
+   // new line 
   //  entity demo as projection on cds.
   function getDummy() returns String;
 
