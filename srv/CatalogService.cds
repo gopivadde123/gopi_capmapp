@@ -93,6 +93,6 @@ service CatalogService @(
    // demo
    // new line 
   //  entity demo as projection on cds.
-  function getDummy() returns String;
+  function getDummy(email: String(40)) returns String;
 
 }

@@ -92,6 +92,17 @@ module.exports = cds.service.impl(async function(){
             return "Hey Error !"+ error.toString();
         }
     });
+    this.on('getDummy',async (req,res)=>{
+        //Instance bound action
+        const email = req.data.email;
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            req.error(400, "Invalid email format");
+        } else {
+            return { message: "Email is valid" };
+        }
+
+    })
     // 'setDelivered' - to link to this to the object page go to annotations in UI
     this.on('setDelivered',async(req,res) =>{
         try{
