@@ -3,9 +3,10 @@ using {
   anubhav.db.transaction
 } from '../db/data-model';
 using {mycapm.myviews} from '../db/CDSViews';
-// new change
+// new chang
 // CatalogService user defined
 // service - CDS keyword for defining an OData endpoint.
+
 //This is a CDS annotation to customize the URL path for the service.
 //requires:'authenticated-user' - force to JWT token,can't access without authentication
 service CatalogService @(
